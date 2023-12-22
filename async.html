@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let stock = {
+            'fruits':[
+                'strawberry','grapes','banana','apple'
+            ],
+            'liquid':[
+                'water','ice'
+            ],
+            'holder':[
+                'cone','cup','stick'
+            ],
+            'toppings':[
+                'chocolate','sprinkles'
+            ]
+        }
+
+        let order = (Fruit_name, call_production)=>{
+            call_production();
+        }
+
+        let production =() =>{
+            console.log('order received, starting production');
+        }
+
+        order(production);
+    </script>
+</body>
+</html>

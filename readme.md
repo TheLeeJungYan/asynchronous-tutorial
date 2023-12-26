@@ -2,17 +2,12 @@
 # ASYNCHROUNOUS WEB TUTORIAL
 
 ### CALLBACK 
-TIME SECONDS
-1.  Place Order                  **2**
-2.  Cut The Fruit                **2**
-3.  Add the water and ice        **1**
-4.  Start the machine            **1**
-5.  Select Container             **2**
-6.  Select Toppings              **3**
-7.  Serve Ice Cream              **2**
-
-No | #Description | #Seconds 
+No | Description | Seconds 
 --- | --- | --- |
-**1** | Place Order | 2
---- | --- | --- |
-**2** | Cut The Fruit | 2
+**1** | Place order | 2
+**2** | Cut the fruit | 2
+**3** | Add the water and ice | 1
+**4** | Start the machine | 1
+**5** | Select container | 2
+**6** | Select toppings | 3
+**7** | Serve ice cream | 2

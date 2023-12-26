@@ -11,7 +11,8 @@ TIME SECONDS
 6.  Select Toppings              **3**
 7.  Serve Ice Cream              **2**
 
-#No | #Description | #Seconds 
+No | #Description | #Seconds 
 --- | --- | --- |
-#1 | Place Order | 2
-#2 | Cut The Fruit | 2
+**1** | Place Order | 2
+--- | --- | --- |
+**2** | Cut The Fruit | 2

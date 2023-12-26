@@ -10,3 +10,6 @@ TIME SECONDS
 5.  Select Container             **2**
 6.  Select Toppings              **3**
 7.  Serve Ice Cream              **2**
+
+| No. | Description         | Seconds |
+| 1.  | Place Order         |    2    |

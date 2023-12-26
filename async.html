@@ -23,15 +23,33 @@
             ]
         }
 
+        //STEP 1
         let order = (Fruit_name, call_production)=>{
-            call_production();
+            setTimeout(()=>{
+                console.log(`${stock.fruits[Fruit_name]} was selected`)
+                call_production();
+            },2000)
+            
         }
 
         let production =() =>{
-            console.log('order received, starting production');
+            setTimeout(() => {
+                
+                console.log('production has started')
+                //STEP2
+                setTimeout(()=>{
+                    console.log('the fruit has been chopped');
+
+                    //STEP3
+                    setTimeout(() => {
+                        console.log()
+                    }, 1000);
+                },2000)
+
+            }, 0000);
         }
 
-        order(production);
+        order(0,production);
     </script>
 </body>
 </html>

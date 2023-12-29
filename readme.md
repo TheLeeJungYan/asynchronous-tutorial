@@ -11,3 +11,13 @@ No | Description | Seconds
 **5** | Select container | 2
 **6** | Select toppings | 3
 **7** | Serve ice cream | 2
+
+
+### PROMISE
+#### concept of promise is like customer i promise that i will serve you ice cream there is two part of promise. either futfill or rejected
+
+#### Four things importants in Promise
+1. relationship between time and work
+2. Promise chaining
+3. error handling
+4. the .finally handler

@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const error = false;
+        const posts = [
+            {title:'Post One', body:'This is post one'},
+            {title:'Post Two', body:'This is post two'}
+        ];
+
+       
+
+        let createPost = (post)=>{
+            return new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    posts.push(post);
+                    if(!error){
+                        resolve();
+                    }else{
+                        reject();
+                    }
+                },2000)
+            })
+        }
+        init()
+        async function init(){
+            await createPost({title:'Post Three',body:'this is post three'});
+            getPost();
+        }
+        let getPost = ()=>{
+            setTimeout(()=>{
+                let output = '';
+                posts.forEach((post,index)=>{
+                    output += `<li>${post.title}</li>`;
+                })
+                console.log(output);
+                document.body.innerHTML = output;
+            },1000)
+            
+        };
+
+        getPost();
+
+       
+
+        
+
+        // async function fetchUser(){
+        //     const res = await fetch('https://jsonplaceholder.typicode.com/users')
+
+        //     const data = await res.json();
+        //     console.log(data);
+        // }
+
+        // fetchUser();
+    </script>
+</body>
+</html>
